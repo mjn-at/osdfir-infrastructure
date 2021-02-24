@@ -44,6 +44,10 @@ DEPENDENCIES = [{
     'programs': ['john'],
     'docker_image': None
 }, {
+    'job': 'PartitionEnumerationJob',
+    'programs': ['bdemount'],
+    'docker_image': None
+}, {
     'job': 'PhotorecJob',
     'programs': ['photorec'],
     'docker_image': None
