@@ -57,6 +57,7 @@ pip3 install https://github.com/google/timesketch/archive/master.zip
 # Create default config.
 mkdir /etc/timesketch
 wget https://raw.githubusercontent.com/google/timesketch/master/data/timesketch.conf -O /etc/timesketch/timesketch.conf
+wget https://raw.githubusercontent.com/google/timesketch/master/data/plaso.mappings -O /etc/timesketch/plaso.mappings
 
 # Set session key.
 sed -i s/"SECRET_KEY = '<KEY_GOES_HERE>'"/"SECRET_KEY = '$${SECRET_KEY}'"/ /etc/timesketch/timesketch.conf
