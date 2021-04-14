@@ -49,17 +49,17 @@ variable "turbinia_docker_image_worker" {
 
 variable "turbinia_server_machine_type" {
   description = "Machine type for Turbinia server"
-  default     = "n1-standard-2"
+  default     = "e2-small"
 }
 
 variable "turbinia_worker_machine_type" {
   description = "Machine type for Turbinia worker."
-  default     = "n1-standard-16"
+  default     = "e2-medium"
 }
 
 variable "turbinia_server_disk_size_gb" {
   description = "Disk size for Turbinia server machine."
-  default     = 200
+  default     = 100
 }
 
 variable "turbinia_server_count"{
@@ -69,7 +69,7 @@ variable "turbinia_server_count"{
 
 variable "turbinia_worker_disk_size_gb" {
   description = "Disk size for Turbinia worker machine."
-  default     = 200
+  default     = 100
 }
 
 variable "turbinia_worker_count" {
