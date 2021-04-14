@@ -39,12 +39,12 @@ variable "infrastructure_id" {
 
 variable "timesketch_machine_type" {
   description = "Machine type for Timesketch server"
-  default     = "n1-standard-2"
+  default     = "e2-medium"
 }
 
 variable "timesketch_disk_size_gb" {
   description = "Disk size for Timesketch server root disk"
-  default     = 200
+  default     = 100
 }
 
 variable "timesketch_admin_username" {
@@ -59,17 +59,17 @@ variable "elasticsearch_cluster_name" {
 
 variable "elasticsearch_machine_type" {
   description = "Machine type for Elastichsearch cluster machines"
-  default     = "n1-highmem-4"
+  default     = "e2-medium"
 }
 
 variable "elasticsearch_disk_size_gb" {
   description = "Disk size for Elasticsearch cluster machines."
-  default     = 1024
+  default     = 256
 }
 
 variable "elasticsearch_node_count" {
   description = "Number of Elasticsearch cluster machines"
-  default     = 2
+  default     = 1
 }
 
 variable "vpc_network" {
